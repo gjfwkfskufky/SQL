@@ -5,5 +5,6 @@ INSERT INTO movies VALUES(1, 'Inception', 'Sci-Fi', 2010, 8.8, 825)
 (5, 'Dunkirk', 'War', 2017, 7.9, 527);
 SELECT movie_title, box_office AS "Earnings (in Cr)"FROM movies;
 SELECT movie_title AS "Movie Title",genre AS "Category"FROM movies;
-SELECT movie_title,genre,rating AS "IMDb Score"FROM movies
-WHERE genre IN ('Sci-Fi', 'Action');SELECT COUNT(*) AS "High Rated Movies"FROM movies WHERE rating > 8.5;
+SELECT movie_title,genre,rating AS "IMDb Score"FROM movies WHERE genre IN ('Sci-Fi', 'Action');
+SELECT movie_title,year AS "Release"FROM movies,WHERE year BETWEEN 2008 AND 2015;
+SELECT COUNT(*) AS "High Rated Movies"FROM movies WHERE rating > 8.5;
